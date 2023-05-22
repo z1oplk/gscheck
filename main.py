@@ -24,7 +24,9 @@ def main():
 
     # 获取message值
     message = response_json.get('message', '')
-
+    
+    print(message)
+    
     # 构造钉钉机器人webhook的请求体
     data = {
         'msgtype': 'text',
